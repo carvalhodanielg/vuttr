@@ -6,6 +6,7 @@ import {api} from './services/api'
 
 import Header from './components/Header';
 import Comands from './components/Comands';
+import MainContainer from './components/Container';
 
 function App() {
 
@@ -27,14 +28,16 @@ const deleteTool = (id) => {
 
 
 useEffect(() => {
-
-  api
-      .get("/tools")
+  const getData = async () => {
+    await api.get("/tools")
       .then((response) => setToolsGet(response.data))
       .catch((err) => {
-        console.error("Deu ruim" + err);
-      });
+      console.error("Deu ruim" + err);
+    });
 
+
+  }
+getData();
 
       
 
@@ -54,9 +57,18 @@ useEffect(() => {
 
   return (
     <div className="App">
+      
+      
+        
+        <Header></Header>
+        <Comands></Comands>
 
-      <Header></Header>
-      <Comands></Comands>
+
+        {toolsGet !== null &&
+        <MainContainer tools={toolsGet}></MainContainer>
+        }
+
+      
 
 
 
