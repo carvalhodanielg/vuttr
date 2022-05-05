@@ -1,23 +1,65 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react'
+
+import {api} from './services/api'
+
+import Header from './components/Header';
+import Comands from './components/Comands';
 
 function App() {
+
+
+const [toolsGet, setToolsGet] = useState();
+const [toolsPost, setToolsPost] = useState();
+const [toolsDelete, setToolsDelete] = useState();
+
+const deleteTool = (id) => {
+  api
+  .delete(`/tools/${id}`)
+  .then((response) => setToolsDelete(response.data))
+  .catch((err) => {
+    console.error("Deu ruim no delete" + err);
+  });
+
+  console.log(toolsGet)
+}
+
+
+useEffect(() => {
+
+  api
+      .get("/tools")
+      .then((response) => setToolsGet(response.data))
+      .catch((err) => {
+        console.error("Deu ruim" + err);
+      });
+
+
+      
+
+  // api.post("/tools",
+  // {
+  //   "title": "hotel",
+  //   "link": "https://github.com/typicode/hotel",
+  //   "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
+  //   "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"]
+  // })
+  //     .then((response)=>setToolsPost(response.data))
+  //     .catch((err)=>{
+  //       console.error("Erro no post"+err)
+  //     });    
+
+}, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header></Header>
+      <Comands></Comands>
+
+
+
     </div>
   );
 }
