@@ -18,7 +18,8 @@ export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
               .catch((err) => {
               console.error("Deu ruim" + err);
             });
-        
+            
+
     }
 
 

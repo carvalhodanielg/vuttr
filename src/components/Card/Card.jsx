@@ -20,7 +20,7 @@ export const Cards = ({tools}) => {
 
                             <div className="card-title">
                                 <h1><a href={element.link} target="_blank">{element.title}</a></h1>
-                                <button>x remove</button>
+                                <button id={element.id}>x remove</button>
                             </div>
     
                             <div className="card-description">
