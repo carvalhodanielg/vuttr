@@ -1,4 +1,5 @@
 import { CardStyle } from "./CardStyles"
+import { WrapStyle } from "./WrapStyle"
 
 export const Cards = ({tools}) => {
 
@@ -7,8 +8,10 @@ export const Cards = ({tools}) => {
 
     return(
 
-        <div>
-        
+
+            
+        <WrapStyle>
+            
                 {
                     tools.map((element, item)=>{
                         
@@ -32,16 +35,9 @@ export const Cards = ({tools}) => {
                         </CardStyle>
                         )
 
-
-                
-
-
                     })
                 }
-  
-
-
-        </div>
+        </WrapStyle>
 
     )
 

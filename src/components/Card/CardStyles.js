@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-    width: 700px;
+    width: 100%;
     height: fit-content;
     border: solid #000 2px;
     background-color: white;
@@ -36,4 +36,9 @@ export const CardStyle = styled.div`
         text-align: left;
         font-weight: bold;
     }
+
 `;
+
+export const Test = styled.div`
+    width: 100%;
+`

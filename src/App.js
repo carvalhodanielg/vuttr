@@ -7,6 +7,8 @@ import {api} from './services/api'
 import Header from './components/Header';
 import Comands from './components/Comands';
 import MainContainer from './components/Container';
+import { ContentWrapper } from './components/ContentWrapper/ContentWrapper';
+import { Modal } from './components/Modal/Modal';
 
 function App() {
 
@@ -32,20 +34,26 @@ getData();
   return (
     <div className="App">
       
-      
+            {toolsAdd &&
+                <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} >
+                  
+                </Modal>
+              }
         
         <Header></Header>
-        <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
-        {toolsAdd &&
-          <div className='modal'>
 
-          </div>
-        }
+        <ContentWrapper>
+              
+              <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
+             
 
 
-        {toolsGet !== undefined &&
-        <MainContainer tools={toolsGet}></MainContainer>
-        }
+              {toolsGet !== undefined &&
+              <MainContainer tools={toolsGet}></MainContainer>
+              }
+
+        </ContentWrapper>
+        
 
     </div>
   );
