@@ -53,7 +53,7 @@ getData();
   //       console.error("Erro no post"+err)
   //     });    
 
-}, [toolsGet]);
+}, []);
 
   return (
     <div className="App">

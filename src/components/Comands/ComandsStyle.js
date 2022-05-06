@@ -7,7 +7,7 @@ export const ComandStyle = styled.div`
     padding: 1rem 0;
 
     .comands-wrapper{
-        width: 600px;
+        width: 700px;
         display: flex;
         justify-content: space-between;
     }

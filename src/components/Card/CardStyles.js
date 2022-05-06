@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-    width: 600px;
+    width: 700px;
     height: fit-content;
     border: solid #000 2px;
     background-color: white;
     padding: .5rem;
+    margin-bottom: 2rem;
 
 
     .card-title{
