@@ -28,13 +28,13 @@ useEffect(() => {
   }
 getData();
 
-}, []);
+}, [toolsGet]);
 
   return (
     <div className="App">
       
             {toolsAdd &&
-                <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} >
+                <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} setToolsGet={setToolsGet} >
                   
                 </Modal>
 

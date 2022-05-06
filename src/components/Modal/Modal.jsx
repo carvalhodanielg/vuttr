@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { ModalStyles } from "./ModalStyles"
+import { api } from "../../services/api"
 
 const nameInput = document.getElementById('toolName')
 const linkInput = document.getElementById('toolLink')
@@ -7,43 +8,54 @@ const descriptionInput = document.getElementById('toolDescription')
 const tagsInput = document.getElementById('toolTags')
 
 
-export const Modal = ({toolsAdd, setToolsAdd})=> {
+export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
 
     const [newTool, setNewTool] = useState({"title": "title 1"});
 
+    const sendTools = async () => {
+            await api.post("/tools", newTool)
+              .then((response) => {console.log(response)})
+              .catch((err) => {
+              console.error("Deu ruim" + err);
+            });
+        
+    }
+
+
 
     const toogle = ()=>{
-         setToolsAdd(!toolsAdd)
+         setToolsAdd(!toolsAdd);
     }
 
 
     const handleAddButton = (event) => {
-        event.preventDefault();       
+        event.preventDefault();
 
-
+        console.log(newTool);
+        sendTools();
         toogle(); //fecha o modal
     }
 
 
     const handleChangeName = (event) => {
-        setNewTool(newTool => ({...newTool, title: event.target.value}))
-        console.log(newTool)
+        setNewTool(newTool => ({...newTool, title: event.target.value}));
+        // console.log(newTool);
     }
 
     const handleChangeLink = (event) => {
-        setNewTool(newTool => ({...newTool, link: event.target.value}))
-        console.log(newTool)
+        setNewTool(newTool => ({...newTool, link: event.target.value}));
+        // console.log(newTool);
     }
    
 
     const handleChangeDescription = (event) => {
-        setNewTool(newTool => ({...newTool, description: event.target.value}))
-        console.log(newTool)
+        setNewTool(newTool => ({...newTool, description: event.target.value}));
+        // console.log(newTool);
     }
 
     const handleChangeTags = (event) => {
-        setNewTool(newTool => ({...newTool, tags: event.target.value.split(" ")}))
-        console.log(newTool)
+        setNewTool(newTool => ({...newTool, tags: event.target.value.split(" ")}));
+        // console.log(newTool);
     }
 
 
@@ -74,12 +86,6 @@ export const Modal = ({toolsAdd, setToolsAdd})=> {
                     </form>
                 </div>
                 
-
-
-
-
-                {/* <h1>haahhaha</h1>
-                <button onClick={toogle}>close</button> */}
            </div>
            
        </ModalStyles>
