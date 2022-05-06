@@ -12,19 +12,8 @@ function App() {
 
 
 const [toolsGet, setToolsGet] = useState();
-const [toolsPost, setToolsPost] = useState();
-const [toolsDelete, setToolsDelete] = useState();
+const [toolsAdd, setToolsAdd] = useState(false);
 
-const deleteTool = (id) => {
-  api
-  .delete(`/tools/${id}`)
-  .then((response) => setToolsDelete(response.data))
-  .catch((err) => {
-    console.error("Deu ruim no delete" + err);
-  });
-
-  console.log(toolsGet)
-}
 
 
 useEffect(() => {
@@ -35,23 +24,8 @@ useEffect(() => {
       console.error("Deu ruim" + err);
     });
 
-
   }
 getData();
-
-      
-
-  // api.post("/tools",
-  // {
-  //   "title": "hotel",
-  //   "link": "https://github.com/typicode/hotel",
-  //   "description": "Local app manager. Start apps within your browser, developer tool with local .localhost domain and https out of the box.",
-  //   "tags":["node", "organizing", "webapps", "domain", "developer", "https", "proxy"]
-  // })
-  //     .then((response)=>setToolsPost(response.data))
-  //     .catch((err)=>{
-  //       console.error("Erro no post"+err)
-  //     });    
 
 }, []);
 
@@ -61,16 +35,17 @@ getData();
       
         
         <Header></Header>
-        <Comands></Comands>
+        <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
+        {toolsAdd &&
+          <div className='modal'>
+
+          </div>
+        }
 
 
         {toolsGet !== undefined &&
         <MainContainer tools={toolsGet}></MainContainer>
         }
-
-      
-
-
 
     </div>
   );
