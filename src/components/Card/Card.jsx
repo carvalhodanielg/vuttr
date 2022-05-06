@@ -19,7 +19,7 @@ export const Cards = ({tools}) => {
                             <CardStyle key={item}> 
 
                             <div className="card-title">
-                                <h1>{element.title}</h1>
+                                <h1><a href={element.link} target="_blank">{element.title}</a></h1>
                                 <button>x remove</button>
                             </div>
     

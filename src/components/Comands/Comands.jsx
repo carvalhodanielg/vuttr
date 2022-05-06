@@ -3,10 +3,9 @@ import { ComandStyle } from "./ComandsStyle"
 
 export const Comands = ({toolsAdd, setToolsAdd}) => {
 
-    
+
 
     const toogle = ()=>{
-        console.log(toolsAdd)
         setToolsAdd(!toolsAdd)
     }
 

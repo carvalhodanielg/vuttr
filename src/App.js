@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react'
 
@@ -38,12 +37,13 @@ getData();
                 <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} >
                   
                 </Modal>
+
               }
         
-        <Header></Header>
+        
 
         <ContentWrapper>
-              
+              <Header></Header>
               <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
              
 
