@@ -53,7 +53,7 @@ getData();
   //       console.error("Erro no post"+err)
   //     });    
 
-}, []);
+}, [toolsGet]);
 
   return (
     <div className="App">
@@ -64,7 +64,7 @@ getData();
         <Comands></Comands>
 
 
-        {toolsGet !== null &&
+        {toolsGet !== undefined &&
         <MainContainer tools={toolsGet}></MainContainer>
         }
 

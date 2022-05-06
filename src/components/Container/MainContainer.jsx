@@ -10,6 +10,7 @@ export const MainContainer = ({tools}) => {
         <ContainerStyle>
             
             <Cards tools={tools}></Cards>
+            
         </ContainerStyle>
     )
 
