@@ -1,18 +1,13 @@
 import { ComandStyle } from "./ComandsStyle"
 
-
 export const Comands = ({toolsAdd, setToolsAdd}) => {
-
-
 
     const toogle = ()=>{
         setToolsAdd(!toolsAdd)
     }
 
-
     return(
         <section>
- 
             <ComandStyle>
                 <div className="comands-wrapper">
                     <div>
@@ -24,12 +19,8 @@ export const Comands = ({toolsAdd, setToolsAdd}) => {
                     <div>
                         <button onClick={toogle}>+ Add</button>
                     </div>
-                </div>
-              
+                </div> 
             </ComandStyle>
-                
-
         </section>
     )
-
 }

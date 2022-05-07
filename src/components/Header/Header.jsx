@@ -1,6 +1,5 @@
 import { Title } from "./HeaderStyle"
 
-
 export const Header = () => {
     return(
         <Title>

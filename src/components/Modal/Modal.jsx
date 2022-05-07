@@ -7,7 +7,6 @@ const linkInput = document.getElementById('toolLink')
 const descriptionInput = document.getElementById('toolDescription')
 const tagsInput = document.getElementById('toolTags')
 
-
 export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
 
     const [newTool, setNewTool] = useState({"title": "title 1"});
@@ -18,25 +17,18 @@ export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
               .catch((err) => {
               console.error("Deu ruim" + err);
             });
-            
-
     }
-
-
 
     const toogle = ()=>{
          setToolsAdd(!toolsAdd);
     }
 
-
     const handleAddButton = (event) => {
         event.preventDefault();
-
         console.log(newTool);
         sendTools();
         toogle(); //fecha o modal
     }
-
 
     const handleChangeName = (event) => {
         setNewTool(newTool => ({...newTool, title: event.target.value}));
@@ -59,10 +51,8 @@ export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
         // console.log(newTool);
     }
 
-
     return(
        <ModalStyles>
-
            <div className="modal-box">
                 <div>
                     <h1>+ Add new tool</h1>
@@ -86,9 +76,8 @@ export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
 
                     </form>
                 </div>
-                
+     
            </div>
-           
        </ModalStyles>
     )
 }

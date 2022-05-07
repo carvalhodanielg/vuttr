@@ -34,27 +34,16 @@ getData();
     <div className="App">
       
             {toolsAdd &&
-                <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} setToolsGet={setToolsGet} >
-                  
-                </Modal>
-
-              }
-        
-        
-
-        <ContentWrapper>
+                <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} setToolsGet={setToolsGet} ></Modal>
+            }
+         <ContentWrapper>
               <Header></Header>
               <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
-             
-
-
               {toolsGet !== undefined &&
               <MainContainer tools={toolsGet}></MainContainer>
               }
-
         </ContentWrapper>
         
-
     </div>
   );
 }
