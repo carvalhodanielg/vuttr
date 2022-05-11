@@ -21,12 +21,12 @@ export const CardStyle = styled.div`
         text-decoration: underline;
     }
 
-    .card-title button{
+    /* .card-title button{
         height: 2rem;
         background-color: transparent;
         border: none;
         cursor: pointer;
-    }
+    } */
 
     .card-description{
         text-align: left;

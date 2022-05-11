@@ -1,3 +1,4 @@
+import  RemoveButton  from "../RemoveButton"
 import { CardStyle } from "./CardStyles"
 import { WrapStyle } from "./WrapStyle"
 
@@ -10,7 +11,7 @@ export const Cards = ({tools}) => {
                             <CardStyle key={item}> 
                                 <div className="card-title">
                                     <h1><a href={element.link} target="_blank">{element.title}</a></h1>
-                                    <button id={element.id}>x remove</button>
+                                    <RemoveButton id={element.id}/>
                                 </div>
         
                                 <div className="card-description">

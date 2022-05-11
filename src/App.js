@@ -36,6 +36,7 @@ getData();
             {toolsAdd &&
                 <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} setToolsGet={setToolsGet} ></Modal>
             }
+            
          <ContentWrapper>
               <Header></Header>
               <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
