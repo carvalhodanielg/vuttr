@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { api } from "../../services/api";
 import { ComandStyle } from "./ComandsStyle"
-
+import addIcon from '../../assets/add-icon.svg'
+import closeIcon from '../../assets/close-icon.svg'
 
 export const Comands = ({toolsAdd, setToolsAdd, toolsGet, setToolsGet}) => {
 
@@ -45,7 +46,7 @@ export const Comands = ({toolsAdd, setToolsAdd, toolsGet, setToolsGet}) => {
                     </div>
 
                     <div>
-                        <button onClick={toogle}>+ Add</button>
+                        <button onClick={toogle}> <img src={closeIcon} alt=" " /> Add</button>
                     </div>
                 </div> 
             </ComandStyle>

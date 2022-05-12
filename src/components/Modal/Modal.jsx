@@ -54,8 +54,11 @@ export const Modal = ({toolsAdd, setToolsAdd, setToolsGet})=> {
     return(
        <ModalStyles>
            <div className="modal-box">
+
+                <button onClick={toogle} className="modalBtn" >X</button>
+
                 <div>
-                    <h1>+ Add new tool</h1>
+                    <h1>+ Add new tool </h1>
                 </div>
 
                 <div>

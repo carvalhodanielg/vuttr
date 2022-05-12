@@ -40,4 +40,14 @@ export const ModalStyles = styled.div`
         display: block;
         align-self: flex-end;
     }
+
+    .modalBtn{
+        position: relative;
+        align-self: flex-end;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+
 `
