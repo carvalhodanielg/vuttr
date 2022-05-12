@@ -16,19 +16,20 @@ const [toolsGet, setToolsGet] = useState();
 const [toolsAdd, setToolsAdd] = useState(false);
 
 
+const getData = async () => {
+  await api.get("/tools")
+    .then((response) => setToolsGet(response.data))
+    .catch((err) => {
+    console.error("Deu ruim" + err);
+  });
+
+}
 
 useEffect(() => {
-  const getData = async () => {
-    await api.get("/tools")
-      .then((response) => setToolsGet(response.data))
-      .catch((err) => {
-      console.error("Deu ruim" + err);
-    });
 
-  }
 getData();
 
-}, [toolsGet]);
+}, [toolsAdd]);
 
   return (
     <div className="App">
@@ -36,12 +37,19 @@ getData();
             {toolsAdd &&
                 <Modal toolsAdd={toolsAdd} setToolsAdd={setToolsAdd} setToolsGet={setToolsGet} ></Modal>
             }
-            
+
          <ContentWrapper>
               <Header></Header>
-              <Comands toolsAdd={toolsAdd} setToolsAdd={setToolsAdd}></Comands>
+
+              <Comands 
+              toolsAdd={toolsAdd} 
+              setToolsAdd={setToolsAdd} 
+              toolsGet={toolsGet}
+              setToolsGet={setToolsGet}
+              ></Comands>
+
               {toolsGet !== undefined &&
-              <MainContainer tools={toolsGet}></MainContainer>
+              <MainContainer tools={toolsGet} setToolsGet={setToolsGet} ></MainContainer>
               }
         </ContentWrapper>
         
