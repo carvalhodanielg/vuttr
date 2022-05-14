@@ -8,7 +8,6 @@ export const CardStyle = styled.div`
     padding: .5rem;
     margin-bottom: 2rem;
 
-
     .card-title{
         height: 3rem;
         display: flex;
@@ -21,13 +20,6 @@ export const CardStyle = styled.div`
         text-decoration: underline;
     }
 
-    /* .card-title button{
-        height: 2rem;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    } */
-
     .card-description{
         text-align: left;
     }
@@ -36,7 +28,6 @@ export const CardStyle = styled.div`
         text-align: left;
         font-weight: bold;
     }
-
 `;
 
 export const Test = styled.div`

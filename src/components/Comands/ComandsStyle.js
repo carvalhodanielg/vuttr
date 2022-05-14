@@ -17,8 +17,6 @@ export const ComandStyle = styled.div`
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-
         background-color: #FCFCFD;
         width: 100px;
         height: 30px;
@@ -33,7 +31,4 @@ export const ComandStyle = styled.div`
             transform: rotate(45deg)
         }
     }
-
-
-
 `
