@@ -28,6 +28,14 @@ Maybe you can mention me or this repo in the acknowledgements too
 <h4>
     <a href="https://countries-taupe-zeta.vercel.app/">View Demo</a>
 </div>
+  
+  
+### About
+  This project is a studying project, it is a technical test from Bossabox company. 
+  It consists on a app that keep useful tools of day use, like Notion, trello etc. The aplication is capable of adding tools, with his related description and tags. 
+  The user can search the tools globally or only based on the tags. The tasks can also be deleted.
+  
+  The app was built using an Fake Api running locally, provided by the promoters of the technical test. 
 
 <br />
 
