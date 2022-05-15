@@ -55,13 +55,13 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :camera: Screenshots
 
 
-<div align="center"> 
-<!--   <img src="https://user-images.githubusercontent.com/100332887/164894772-d6d9ae08-c6a2-4907-9919-5754fcb05a2d.png" alt="screenshot" />
+<!-- <div align="center"> 
+  <img src="https://user-images.githubusercontent.com/100332887/164894772-d6d9ae08-c6a2-4907-9919-5754fcb05a2d.png" alt="screenshot" />
   
   <img src="https://user-images.githubusercontent.com/100332887/164894792-44544595-c9e4-41fd-b6f7-59fe90e372cc.png" alt="screenshot" />
   
-  <img src="https://user-images.githubusercontent.com/100332887/164894801-0f688efc-a8ee-4c40-9970-a1d6e51242b1.png" alt="screenshot" /> -->
-</div>
+  <img src="https://user-images.githubusercontent.com/100332887/164894801-0f688efc-a8ee-4c40-9970-a1d6e51242b1.png" alt="screenshot" />
+</div> -->
 
 
 <!-- TechStack -->
