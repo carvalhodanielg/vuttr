@@ -193,3 +193,7 @@ Project Link: [GitHub](https://github.com/carvalhodanielg/countries)
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
+  
+Found challenges like this one at Felipe Fialho's repository:
+  
+``` htps://github.com/felipefialho/frontend-challenges ```
