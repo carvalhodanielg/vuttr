@@ -26,7 +26,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 </p>
    
 <h4>
-    <a href="https://countries-taupe-zeta.vercel.app/">View Demo</a>
+    
 </div>
   
   
@@ -63,13 +63,21 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :camera: Screenshots
 
 
-<!-- <div align="center"> 
-  <img src="https://user-images.githubusercontent.com/100332887/164894772-d6d9ae08-c6a2-4907-9919-5754fcb05a2d.png" alt="screenshot" />
+<div align="center"> 
+  <img src="https://user-images.githubusercontent.com/100332887/169192312-48249123-9c5b-4704-ac3a-f82bad7fa06d.png" alt="screenshot" />
   
-  <img src="https://user-images.githubusercontent.com/100332887/164894792-44544595-c9e4-41fd-b6f7-59fe90e372cc.png" alt="screenshot" />
+  <img src="https://user-images.githubusercontent.com/100332887/169192347-477da674-cb14-4f72-a6e0-f424a9bb6780.png" alt="screenshot" />
   
-  <img src="https://user-images.githubusercontent.com/100332887/164894801-0f688efc-a8ee-4c40-9970-a1d6e51242b1.png" alt="screenshot" />
-</div> -->
+  <img src="https://user-images.githubusercontent.com/100332887/169192446-f4f92dcf-3a18-4514-9855-33f5348c4679.png" alt="screenshot" />
+  
+  <img src="https://user-images.githubusercontent.com/100332887/169192471-5611a2e7-f9b9-44e7-9fe6-150221998531.png" alt="screenshot" />
+  
+  <img src="https://user-images.githubusercontent.com/100332887/169192536-73347496-c5de-4ab4-95b2-6a630012bc5f.png" alt="screenshot" />
+  
+  <img src="https://user-images.githubusercontent.com/100332887/169192559-5278f450-8882-4d7c-9624-9dbcf21036fc.png" alt="screenshot" />
+  
+  <img src="https://user-images.githubusercontent.com/100332887/169192593-00d4795a-a98a-4ce4-b7c7-9efdcd52d887.png" alt="screenshot" />
+</div>
 
 
 <!-- TechStack -->
@@ -107,18 +115,6 @@ Maybe you can mention me or this repo in the acknowledgements too
 
 
 
-<!-- Color Reference -->
-### :art: Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Body Color | ![#FFF](https://via.placeholder.com/10/FFF?text=+) #FFF |
-| Card Color | ![#F2F8FF](https://via.placeholder.com/10/F2F8FF?text=+) #F2F8FF |
-| Text Color | ![#0F4189](https://via.placeholder.com/10/0F4189?text=+) #0F4189 |
-| Button Color | ![#FF793F](https://via.placeholder.com/10/FF793F?text=+) #FF793F |
-
-
-
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
 
@@ -131,10 +127,37 @@ This project uses npm as package manager
 <!-- Run Locally -->
 ### :running: Run Locally
 
+#### 1-Running the API Locally
+  
+  Clone the API
+  
+```bash
+  git clone https://gitlab.com/bossabox/challenge-fake-api.git
+```
+  
+Go to the API directory
+
+```bash
+  cd json-server
+```  
+Install dependencies
+
+```bash
+  npm install
+```
+  
+Run the API (It will open at ```http://localhost:3000```)  
+```bash  
+  npx json-server db.json
+```
+  
+ 
+#### 2-Running the project
+  
 Clone the project
 
 ```bash
-  git clone https://github.com/carvalhodanielg/countries.git
+  git clone https://github.com/carvalhodanielg/vuttr.git
 ```
 
 Go to the project directory
@@ -154,6 +177,8 @@ Start the server
 ```bash
   npm start
 ```
+  
+Allow it to run in another port, ex.: ``` http://localhost:3001 ```
 
 
   
