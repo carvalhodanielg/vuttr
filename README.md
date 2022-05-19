@@ -42,17 +42,18 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
-- [About the Project](#about-the-project)
-  * [Screenshots](#screenshots)
-  * [Tech Stack](#tech-stack)
-  * [Features](#features)
-  * [Color Reference](#color-reference)
+- [About the Project](#star2-about-the-project)
+  * [Screenshots](#camera-screenshots)
+  * [Tech Stack](#space_invader-tech-stack)
+  * [Features](#dart-features)
 
 - [Getting Started](#getting-started)
-  * [Run Locally](#run-locally)
+  * [Run Locally](#running-run-locally)
+    * [Run API Locally](#1-running-the-api-locally)
+    * [Run the project](#2-running-the-project)
 
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [Contact](#handshake-contact)
+- [Acknowledgements](#gem-acknowledgements)
   
 
 <!-- About the Project -->
